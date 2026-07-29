@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokéVault | Pacotes & Boosters Oficiais de Pokémon</title>
+  <meta name="description" content="Compre Boosters, Booster Boxes e Lotes de Pacotes de Cartas Pokémon oficiais direto de distribuidora. Sinta a emoção de abrir suas cartas e montar sua comunidade.">
+  
+  <!-- Google Fonts: Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet Customizado -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Vanilla-Tilt.js CDN para efeito 3D nas Cartas/Boosters -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR FLUTUANTE -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">🔥</div>
+        <span>Poké<span class="text-gradient">Vault</span></span>
+      </a>
+      <button class="nav-cart-btn" id="nav-cart-trigger" onclick="scrollToCatalog()">
+        🛒 <span>Meu Pedido</span>
+        <span class="cart-badge" id="cart-count">0</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION COM BANNER VISUAL CINEMÁTICO -->
+  <section class="hero reveal">
+    <div class="hero-banner-wrapper">
+      <img src="hero_banner.jpg" alt="Pokémon Boosters Banner" class="hero-banner-img">
+      <div class="hero-banner-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="badge-tag">
+        <span>⚡</span> Produtos 100% Selados & Oficiais Pokémon
+      </div>
+      
+      <h1 class="hero-title">
+        Sinta a Emoção de <span class="text-gradient">Abrir Seus Boosters</span> e Tirar as Cartas Mais Raras!
+      </h1>
+      
+      <p class="hero-subtitle">
+        Pacotes de cartas 100% originais direto da distribuidora. Junte-se à nossa comunidade exclusiva de colecionadores para trocar e exibir suas cartas mais valiosas.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#catalogo" class="btn btn-primary">
+          📦 Ver Pacotes & Boosters
+        </a>
+        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20entrar%20no%20grupo%20VIP%20de%20colecionadores%20para%20trocar%20e%20comprar%20boosters." target="_blank" class="btn btn-whatsapp">
+          💬 Entrar na Comunidade VIP
+        </a>
+      </div>
+
+      <!-- PROVA SOCIAL / BENEFÍCIOS -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">Direct</span>
+          <span class="stat-label">Distribuidora</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Lacrados</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">+2.5k</span>
+          <span class="stat-label">Membros VIP</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO COMUNIDADE DE COLECIONADORES (NOVA) -->
+  <section class="section reveal community-section">
+    <div class="community-card">
+      <div class="community-content">
+        <span class="badge-tag">🏆 Comunidade Oficial</span>
+        <h2>Abra ao Vivo e Compartilhe com a Galera</h2>
+        <p>A experiência PokéVault vai além da compra. No nosso grupo exclusivo do WhatsApp, a galera posta vídeos abrindo pacotes, negocia trocas e comemora cada Ultra Rara tirada!</p>
+        <a href="https://wa.me/5511999999999?text=Quero%20participar%20da%20comunidade%20de%20trocas%20e%20unboxing!" target="_blank" class="btn btn-whatsapp">
+          🚀 Entrar para o Grupo de Unboxing & Trocas
+        </a>
+      </div>
+      <div class="community-badge-icon">
+        ✨🎴
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO COMO FUNCIONA -->
+  <section class="section reveal">
+    <div class="section-header">
+      <h2 class="section-title">Como Funciona a Compra</h2>
+      <p class="section-subtitle">Tudo transparente e com garantia de produto original direto da distribuidora.</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <span class="step-number">01</span>
+        <div class="step-icon">📦</div>
+        <h3>Escolha seus Pacotes</h3>
+        <p>Selecione se prefere boosters avulsos, combos promocionais ou caixas Booster Box seladas.</p>
+      </div>
+
+      <div class="step-card">
+        <span class="step-number">02</span>
+        <div class="step-icon">📲</div>
+        <h3>Confirme via WhatsApp</h3>
+        <p>Ao finalizar, enviaremos o resumo do pedido diretamente para nosso atendimento no WhatsApp.</p>
+      </div>
+
+      <div class="step-card">
+        <span class="step-number">03</span>
+        <div class="step-icon">🎉</div>
+        <h3>Rasgue e Divirta-se</h3>
+        <p>Receba em embalagem super protegida e compartilhe os acertos com a galera no grupo VIP!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO GAMIFICADO (BOOSTERS & PACOTES) -->
+  <section class="section reveal" id="catalogo">
+    <div class="section-header">
+      <h2 class="section-title">Catálogo de <span class="text-gradient-gold">Pacotes & Boosters</span></h2>
+      <p class="section-subtitle">Inicie ou expanda seu estoque com pacotes 100% lacrados da distribuidora.</p>
+    </div>
+
+    <!-- FILTROS POR CATEGORIA DE PRODUTO -->
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterCards('all')">Todos os Produtos</button>
+      <button class="filter-btn" onclick="filterCards('booster')">📦 Boosters Avulsos</button>
+      <button class="filter-btn" onclick="filterCards('combo')">🔥 Combos Promocionais</button>
+      <button class="filter-btn" onclick="filterCards('box')">👑 Booster Box (Caixa)</button>
+    </div>
+
+    <!-- GRID DINÂMICO DE PRODUTOS -->
+    <div class="cards-grid" id="cards-container">
+      <!-- Inserido dinamicamente via JS -->
+    </div>
+  </section>
+
+  <!-- FAQ / PERGUNTAS FREQUENTES -->
+  <section class="section reveal">
+    <div class="section-header">
+      <h2 class="section-title">Dúvidas Frequentes</h2>
+      <p class="section-subtitle">Saiba mais sobre procedência e envio.</p>
+    </div>
+
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Os pacotes são realmente originais e selados?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Sim! Todos os nossos produtos vêm diretamente da distribuidora oficial da Pokémon Company no Brasil. Garantimos lacre de fábrica e procedência total.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Como funciona a comunidade no WhatsApp?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Nosso grupo é um espaço seguro focado na paixão pelo TCG: a galera envia fotos/vídeos abrindo os pacotes, organiza trocas de cartas repetidas e fica sabendo em primeira mão quando novos lotes chegam.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Enviam para todo o Brasil?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Sim! Enviamos para todo o território nacional com frete seguro e código de rastreamento enviado em até 24h úteis pós-compra.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCK FLUTUANTE DE CARRINHO (MOBILE FIRST) -->
+  <div class="cart-dock" id="cart-dock">
+    <div class="dock-info">
+      <span class="dock-title">Meu Pedido (<span id="dock-count">0</span> itens)</span>
+      <span class="dock-total" id="dock-total-price">R$ 0,00</span>
+    </div>
+    <button class="btn-checkout-dock" onclick="sendWhatsAppOrder()">
+      📲 Pedir no WhatsApp
+    </button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer-text">
+      © 2026 PokéVault. Todos os direitos reservados. Pokémon e seus respectivos nomes são marcas registradas da Nintendo / Creatures Inc. / GAME FREAK inc.
+    </p>
+  </footer>
+
+  <!-- SCRIPT PRINCIPAL DA APLICAÇÃO -->
+  <script src="app.js"></script>
+
+</body>
+</html>
